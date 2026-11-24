@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Levantamento de Terreno</title>
+<link rel="stylesheet" href="../CSS/painelStyle.css">
+<script src="../JS/area.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navTitulo">Levantamento de terreno</div>
+  <div class="navAba navAbaAtiva">Área construível</div>
+  <div class="navEquipe">Área de trabalho da equipe</div>
+</nav>
+
+<div class="paginaConteudo">
+  <h1>Coordenadas do terreno</h1>
+  <p class="subtitulo">Informe as dimensões do terreno e os recuos exigidos.</p>
+
+  <div class="cardsLinha">
+    <div class="card">
+      <h2>01 Entrada de dados</h2>
+      <p class="cardDescricao">Defina as dimensões do terreno e os recuos.</p>
+
+      <form id="formTerreno">
+        <label>Largura do terreno (m)</label>
+        <input type="number" step="0.01" id="largura" required>
+
+        <label>Comprimento do terreno (m)</label>
+        <input type="number" step="0.01" id="comprimento" required>
+
+        <label>Recuo lateral (m)</label>
+        <input type="number" step="0.01" id="recuoLateral" required>
+
+        <label>Recuo frente/fundo (m)</label>
+        <input type="number" step="0.01" id="recuoFrenteFundo" required>
+
+        <button type="submit">Gerar planta e calcular dados</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>02 Planta e resultados</h2>
+      <p class="cardDescricao">Visualização a partir dos dados informados.</p>
+
+      <svg id="plantaSvg" viewBox="0 0 600 400" class="plantaSvg"></svg>
+    </div>
+  </div>
+
+  <div class="statsLinha">
+    <div class="statCard">
+      <span class="statLabel">Área construível</span>
+      <span class="statValor" id="areaTotal">—</span>
+    </div>
+    <div class="statCard">
+      <span class="statLabel">Perímetro</span>
+      <span class="statValor" id="perimetro">—</span>
+    </div>
+    <div class="statCard">
+      <span class="statLabel">Dimensões</span>
+      <span class="statValor" id="dimensoes">—</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

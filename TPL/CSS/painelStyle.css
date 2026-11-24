@@ -1,0 +1,152 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f5;
+  color: #1a1a1a;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navTitulo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navAba {
+  color: #777;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.navAbaAtiva {
+  color: #1e7145;
+  border-bottom: 2px solid #1e7145;
+}
+
+.navEquipe {
+  margin-left: auto;
+  color: #999;
+  font-size: 13px;
+}
+
+.paginaConteudo {
+  padding: 40px;
+}
+
+.paginaConteudo h1 {
+  font-size: 26px;
+}
+
+.subtitulo {
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 25px;
+}
+
+.cardsLinha {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 1;
+}
+
+.card h2 {
+  font-size: 16px;
+}
+
+.cardDescricao {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.card form label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.card form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.card form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #1e7145;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card form button:hover {
+  background: #15592f;
+}
+
+.plantaSvg {
+  width: 100%;
+  height: 350px;
+  background: repeating-linear-gradient(0deg, #f0f0f0, #f0f0f0 1px, transparent 1px, transparent 20px),
+              repeating-linear-gradient(90deg, #f0f0f0, #f0f0f0 1px, transparent 1px, transparent 20px);
+}
+
+.terrenoRect {
+  fill: none;
+  stroke: #999;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+.construcaoRect {
+  fill: rgba(30, 113, 69, 0.15);
+  stroke: #1e7145;
+  stroke-width: 2;
+}
+
+.statsLinha {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.statCard {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #777;
+}
+
+.statValor {
+  font-size: 22px;
+  font-weight: bold;
+}
